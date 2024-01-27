@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Supermarket Website</title>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <div class="logo">
+        <img src="https://source.unsplash.com/5MlBMYDsGBY" alt="Supermarket Logo">
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search products...">
+    </div>
+    <div class="cart-section">
+        <div class="contact-whatsapp">
+            <p>Contactanos por WhatsApp</p>
+        </div>
+        <div class="cart-icon">
+            <img src="https://source.unsplash.com/_qsuER9xYOY" alt="Shopping Cart">
+        </div>
+    </div>
+
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <button class="scroll-button left" onclick="prevSlide()">❮</button>
+        <div class="hero-images">
+            <img src="https://source.unsplash.com/ivfp_yxZuYQ" alt="Supermarket Hero Image 1">
+            <!-- Add more images as needed -->
+        </div>
+        <button class="scroll-button right" onclick="nextSlide()">❯</button>
+    </section>
+    <!-- <section class="hero">
+        <img src="https://source.unsplash.com/ivfp_yxZuYQ" alt="Supermarket Hero Image">
+        
+    </section> -->
+
+    <!-- Category Sections -->
+    <section class="categories">
+        <!-- Category 1 -->
+        <div class="category">
+            <h2>Category 1</h2>
+            <!-- Add content for category 1 -->
+        </div>
+
+        <!-- Category 2 -->
+        <div class="category">
+            <h2>Category 2</h2>
+            <!-- Add content for category 2 -->
+        </div>
+
+        <div class="category">
+            <h2>Category 3</h2>
+            <!-- Add content for category 1 -->
+        </div>
+
+        <!-- Category 2 -->
+        <div class="category">
+            <h2>Category 4</h2>
+            <!-- Add content for category 2 -->
+        </div>
+
+        <div class="category">
+            <h2>Category 5</h2>
+            <!-- Add content for category 1 -->
+        </div>
+
+        <!-- Category 2 -->
+        <div class="category">
+            <h2>Category 6</h2>
+            <!-- Add content for category 2 -->
+        </div>
+
+        <div class="category">
+            <h2>Category 7</h2>
+            <!-- Add content for category 1 -->
+        </div>
+
+        <!-- Category 2 -->
+        <div class="category">
+            <h2>Category 8</h2>
+            <!-- Add content for category 2 -->
+        </div>
+
+        <!-- Add more category sections as needed -->
+
+    </section>
+
+    <!-- Include JavaScript at the end of the body -->
+    <script src="script.js"></script>
+
+</body>
+</html>
