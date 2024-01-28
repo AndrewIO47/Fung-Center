@@ -143,7 +143,7 @@
 
 .products-wrapper {
     display: flex;
-    margin-left: -10px; /* Compensate for the negative margin of the first product */
+    position: relative; /* Add position relative to the wrapper */
 }
 
 .product {
@@ -163,26 +163,26 @@
 }
 
 .scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
+    z-index: 1; /* Ensure buttons are above the products */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .prev-btn {
-    left: 0;
-    margin-left: 20px; /* Adjust the margin to create a gap between the button and the edge */
+    left: 0; /* Position the previous button to the left */
 }
 
 .next-btn {
-    right: 0;
-    margin-right: 20px; /* Adjust the margin to create a gap between the button and the edge */
+    right: 0; /* Position the next button to the right */
 }
+
 
 
 /* inside product information */
