@@ -254,9 +254,11 @@ footer {
     margin: 0 auto;
 }
 
-.footer-logo {
+.footer-logo img {
     flex-basis: calc(30% - 20px); /* Adjust column width with gap */
     text-align: left;
+    width: 200px; /* Limit the image size to its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .footer-column {
