@@ -254,23 +254,17 @@ footer {
     margin: 0 auto;
 }
 
-.footer-logo img {
-    flex-basis: calc(30% - 20px); /* Adjust column width with gap */
-    text-align: left;
-    width: 200px; /* Limit the image size to its container */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.footer-column {
-    flex-basis: calc(23.33% - 20px); /* Adjust column width with gap */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.footer-info,
+.footer-logo,
+.footer-contact,
 .footer-address,
 .footer-social {
+    flex-basis: calc(25% - 20px); /* Adjust column width with gap */
     margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
 }
 
 .footer-social a {
@@ -284,10 +278,12 @@ footer {
     margin-top: 20px;
 }
 
+
 @media only screen and (max-width: 768px) {
-    .footer-logo,
     .footer-column {
-        flex-basis: 100%;
+        flex-basis: 100%; /* Make columns stack vertically on smaller screens */
     }
 }
+
+
 
