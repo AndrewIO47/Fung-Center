@@ -1,19 +1,30 @@
-/* Styles specific to the product page */
-
 /* Category Section */
 .category-section {
     background-color: #f4f4f4;
     padding: 10px 0;
-    overflow-x: auto;
-    white-space: nowrap;
+    display: flex;
+    flex-direction: row; /* Align categories horizontally */
+    justify-content: center; /* Center the categories horizontally */
+    flex-wrap: wrap; /* Allow categories to wrap to the next line */
+}
+
+.category {
+    margin: 5px; /* Add margin between categories */
+    
 }
 
 .category-item {
-    display: inline-block;
     padding: 10px 20px;
-    margin: 0 10px;
     background-color: #ddd;
-    border-radius: 5px;
+    border-radius: 30px;
+    text-align: center; /* Align text in the center */
+    white-space: nowrap; /* Prevent category items from wrapping */
+}
+
+@media screen and (max-width: 768px) {
+    .category-item {
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
 }
 
 @media screen and (max-width: 768px) {
