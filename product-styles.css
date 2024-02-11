@@ -51,13 +51,14 @@
 
 .product-image {
     height: 50%; /* Set the height of the image box */
+    padding-top: 10px;
 }
 
 .product-image img {
-    width: auto; /* Allow the image to shrink while maintaining aspect ratio */
-    height: auto; /* Allow the image to shrink while maintaining aspect ratio */
-    max-width: 100%; /* Ensure the image fits inside the image box */
-    max-height: 100%; /* Ensure the image fits inside the image box */
+    width: auto; /* Ensure the image fills its container */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed its container's height */
 }
 
 
@@ -68,6 +69,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    height: 50%;
 }
 
 .product-name {
