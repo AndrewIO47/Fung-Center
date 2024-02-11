@@ -30,8 +30,10 @@
 
 /* Product Section */
 .product-section {
-    max-width: 1200px; /* Set maximum width for product section */
+    width: 100%; /* Span the width of the page */
+    max-width: calc(100% - 40px); /* Set maximum width for product section */
     margin: 0 auto; /* Center align product section */
+    box-sizing: border-box; /* Include padding and border in the width */
 }
 
 .product-container {
