@@ -43,7 +43,7 @@
 
 .product {
     flex-basis: calc(20% - 20px); /* Adjust width to fit 5 products per row */
-    margin-bottom: 20px;
+    margin: 0; /* Set margin to zero */
     background-color: #f4f4f4; /* Placeholder background color */
     padding: 20px; /* Adjust padding for spacing */
     box-sizing: border-box;
