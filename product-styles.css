@@ -30,6 +30,11 @@
 
 /* Product Section */
 .product-section {
+    max-width: 1200px; /* Set maximum width for product section */
+    margin: 0 auto; /* Center align product section */
+}
+
+.product-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
