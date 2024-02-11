@@ -1,8 +1,8 @@
 /* product-styles.css */
 
 .category-section {
-    background-color: #f4f4f4;
-    padding: 10px 0;
+    background-color: #c65656;
+    padding: 10px;
     display: flex;
     justify-content: center; /* Center items horizontally */
     gap: 20px; /* Add gap between category items */
@@ -17,7 +17,7 @@
     background-color: #ddd;
     border-radius: 30px;
     text-align: center; /* Align text in the center */
-    min-width: 120px; /* Set a fixed width for each category bubble */
+    margin: 0;
 }
 
 /* Adjust category item size for smaller screens */
