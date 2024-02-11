@@ -31,8 +31,6 @@
 /* Product Section */
 .product-section {
     width: 100%; /* Span the width of the page */
-    max-width: calc(100% - 40px); /* Set maximum width for product section */
-    margin: 0 auto; /* Center align product section */
     box-sizing: border-box; /* Include padding and border in the width */
 }
 
@@ -40,37 +38,37 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 20px; /* Add padding for spacing */
+    padding: 0 10px; /* Adjust padding for spacing */
 }
 
 .product {
-    width: calc(20% - 20px); /* Adjust width to fit 5 products per row */
+    flex-basis: calc(20% - 20px); /* Adjust width to fit 5 products per row */
     margin-bottom: 20px;
     background-color: #f4f4f4; /* Placeholder background color */
-    padding: 20px;
+    padding: 20px; /* Adjust padding for spacing */
     box-sizing: border-box;
 }
 
 @media screen and (max-width: 1200px) {
     .product {
-        width: calc(20% - 20px); /* Adjust width for 5 products per row */
+        flex-basis: calc(20% - 20px); /* Adjust width for 5 products per row */
     }
 }
 
 @media screen and (max-width: 992px) {
     .product {
-        width: calc(20% - 20px); /* Adjust width for 5 products per row */
+        flex-basis: calc(20% - 20px); /* Adjust width for 5 products per row */
     }
 }
 
 @media screen and (max-width: 768px) {
     .product {
-        width: calc(20% - 20px); /* Adjust width for 5 products per row */
+        flex-basis: calc(20% - 20px); /* Adjust width for 5 products per row */
     }
 }
 
 @media screen and (max-width: 576px) {
     .product {
-        width: calc(100% - 40px); /* Full width for 1 product per row on smaller screens */
+        flex-basis: calc(100% - 20px); /* Full width for 1 product per row on smaller screens */
     }
 }
