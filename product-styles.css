@@ -55,6 +55,7 @@
     width: 100%; /* Ensure the product fills its grid cell horizontally */
     height: 350px; /* Ensure the product fills its grid cell vertically */
     margin: 0; /* Remove any default margin */
+    margin-bottom: 20px;
     padding: 0; /* Remove any default padding */
 }
 
