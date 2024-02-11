@@ -1,39 +1,58 @@
-/* Category Section */
+/* product-styles.css */
+
 .category-section {
     background-color: #f4f4f4;
     padding: 10px 0;
     display: flex;
     justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-}
-
-.category {
-    margin: 5px; /* Add margin between categories */
-    
+    gap: 20px; /* Add gap between category items */
 }
 
 .category-item {
     padding: 10px 20px;
     background-color: #ddd;
-    margin: 10px; /* Add margin around each item */
     border-radius: 30px;
     text-align: center; /* Align text in the center */
     min-width: 120px; /* Set a fixed width for each category bubble */
 }
 
+/* Adjust category item size for smaller screens */
 @media screen and (max-width: 768px) {
+    .category-section {
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
     .category-item {
-        margin: 5px; /* Adjust margin for smaller screens */
+        min-width: calc(33.33% - 20px); /* Set a percentage width for smaller screens */
+        margin: 5px; /* Reduce the margin for smaller screens */
     }
 }
 
-@media screen and (max-width: 768px) {
-    .category-section {
-        overflow-x: scroll;
-        white-space: nowrap;
-    }
+/* product-styles.css */
 
-    .category-item {
-        margin: 0 5px;
+.product-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 5 columns per row */
+    gap: 20px; /* Add gap between products */
+}
+
+.product {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    text-align: center;
+}
+
+/* Adjust product size for smaller screens */
+@media screen and (max-width: 768px) {
+    .product-section {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 4 columns per row */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product-section {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 3 columns per row */
     }
 }
