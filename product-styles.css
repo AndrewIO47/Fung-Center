@@ -8,6 +8,10 @@
     gap: 20px; /* Add gap between category items */
 }
 
+.category {
+    margin-bottom: 0; /* Remove bottom margin for category container */
+}
+
 .category-item {
     padding: 10px 20px;
     background-color: #ddd;
@@ -27,6 +31,8 @@
         margin: 5px; /* Reduce the margin for smaller screens */
     }
 }
+
+
 /* Product Section */
 .product-section {
     width: 100%; /* Span the width of the page */
@@ -41,13 +47,13 @@
 }
 
 .product {
-    background-color: #f4f4f4; /* Placeholder background color */
+    background-color: orange; /* Placeholder background color */
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%; /* Ensure the product fills its grid cell horizontally */
-    height: 100%; /* Ensure the product fills its grid cell vertically */
+    height: 350px; /* Ensure the product fills its grid cell vertically */
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
 }
