@@ -47,14 +47,18 @@
     align-items: center;
     justify-content: center;
     width: 100%; /* Ensure the product fills its grid cell horizontally */
+    height: 100%; /* Ensure the product fills its grid cell vertically */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
 
 .product-content {
     padding: 20px; /* Adjust padding for spacing */
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
 }
+
 
 @media screen and (max-width: 1200px) {
     .product-container {
