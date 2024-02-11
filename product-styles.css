@@ -43,8 +43,11 @@
 
 .product {
     background-color: #f4f4f4; /* Placeholder background color */
-    padding: 20px; /* Adjust padding for spacing */
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure the product fills its grid cell horizontally */
 }
 
 @media screen and (max-width: 1200px) {
