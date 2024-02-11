@@ -34,6 +34,66 @@
 
 
 /* Product Section */
+
+.product {
+    background-color: orange; /* Placeholder background color */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Ensure the product fills its grid cell horizontally */
+    height: 350px; /* Ensure the product fills its grid cell vertically */
+    margin: 0; /* Remove any default margin */
+    margin-bottom: 20px;
+    padding: 0; /* Remove any default padding */
+}
+
+.product-image {
+    height: 50%; /* Set the height of the image box */
+    overflow: hidden; /* Ensure the image stays within the image box */
+}
+
+.product-image img {
+    width: 100%; /* Make the image fill the image box */
+    height: auto; /* Preserve the aspect ratio */
+}
+
+.product-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.product-name {
+    margin-bottom: 10px;
+}
+
+.product-price {
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
+
+
 .product-section {
     width: 100%; /* Span the width of the page */
     box-sizing: border-box; /* Include padding and border in the width */
@@ -44,19 +104,6 @@
     grid-template-columns: repeat(auto-fill, minmax(calc(20% - 20px), 1fr)); /* 5 columns */
     gap: 0; /* Remove space between products */
     padding: 0 10px; /* Adjust padding for spacing */
-}
-
-.product {
-    background-color: orange; /* Placeholder background color */
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /* Ensure the product fills its grid cell horizontally */
-    height: 350px; /* Ensure the product fills its grid cell vertically */
-    margin: 0; /* Remove any default margin */
-    margin-bottom: 20px;
-    padding: 0; /* Remove any default padding */
 }
 
 .product-content {
