@@ -40,6 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 20px; /* Add padding for spacing */
 }
 
 .product {
@@ -52,24 +53,24 @@
 
 @media screen and (max-width: 1200px) {
     .product {
-        width: calc(25% - 20px); /* Adjust width for 4 products per row */
+        width: calc(20% - 20px); /* Adjust width for 5 products per row */
     }
 }
 
 @media screen and (max-width: 992px) {
     .product {
-        width: calc(33.33% - 20px); /* Adjust width for 3 products per row */
+        width: calc(20% - 20px); /* Adjust width for 5 products per row */
     }
 }
 
 @media screen and (max-width: 768px) {
     .product {
-        width: calc(50% - 20px); /* Adjust width for 2 products per row */
+        width: calc(20% - 20px); /* Adjust width for 5 products per row */
     }
 }
 
 @media screen and (max-width: 576px) {
     .product {
-        width: 100%; /* Full width for 1 product per row on smaller screens */
+        width: calc(100% - 40px); /* Full width for 1 product per row on smaller screens */
     }
 }
