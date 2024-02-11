@@ -27,6 +27,7 @@
         margin: 5px; /* Reduce the margin for smaller screens */
     }
 }
+
 /* Product Section */
 .product-section {
     width: 100%; /* Span the width of the page */
@@ -34,15 +35,13 @@
 }
 
 .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(20% - 20px), 1fr)); /* 5 columns */
+    gap: 20px; /* Adjust spacing between products */
     padding: 0 10px; /* Adjust padding for spacing */
 }
 
 .product {
-    flex-basis: calc(20% - 20px); /* Adjust width to fit 5 products per row */
-    margin: 0; /* Set margin to zero */
     background-color: #f4f4f4; /* Placeholder background color */
     padding: 20px; /* Adjust padding for spacing */
     box-sizing: border-box;
@@ -50,24 +49,24 @@
 
 @media screen and (max-width: 1200px) {
     .product {
-        flex-basis: calc(25% - 20px); /* Adjust width for 4 products per row */
+        grid-template-columns: repeat(auto-fill, minmax(calc(25% - 20px), 1fr)); /* 4 columns */
     }
 }
 
 @media screen and (max-width: 992px) {
     .product {
-        flex-basis: calc(33.33% - 20px); /* Adjust width for 3 products per row */
+        grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr)); /* 3 columns */
     }
 }
 
 @media screen and (max-width: 768px) {
     .product {
-        flex-basis: calc(50% - 20px); /* Adjust width for 2 products per row */
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 20px), 1fr)); /* 2 columns */
     }
 }
 
 @media screen and (max-width: 576px) {
     .product {
-        flex-basis: calc(100% - 20px); /* Full width for 1 product per row on smaller screens */
+        grid-template-columns: repeat(auto-fill, minmax(calc(100% - 20px), 1fr)); /* 1 column */
     }
 }
