@@ -51,13 +51,15 @@
 
 .product-image {
     height: 50%; /* Set the height of the image box */
-    overflow: hidden; /* Ensure the image stays within the image box */
 }
 
 .product-image img {
-    width: 100%; /* Make the image fill the image box */
-    height: auto; /* Preserve the aspect ratio */
+    width: auto; /* Allow the image to shrink while maintaining aspect ratio */
+    height: auto; /* Allow the image to shrink while maintaining aspect ratio */
+    max-width: 100%; /* Ensure the image fits inside the image box */
+    max-height: 100%; /* Ensure the image fits inside the image box */
 }
+
 
 .product-details {
     width: 100%;
