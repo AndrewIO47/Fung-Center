@@ -53,10 +53,36 @@
 .top-nav.second {
     background-color: #2196F3;
     color: #fff;
-    padding: 10px;
+    padding: 10px 30px;
 }
 
-.top-nav.second ul {
+.top-nav.second .nav-links {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+    justify-content: space-between; /* Add space between items */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
+.top-nav.second li {
+    margin: 0 10px; /* Add margin to create space between items */
+}
+
+.top-nav.second a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Adjust navigation item spacing for smaller screens */
+@media screen and (max-width: 768px) {
+    .top-nav.second li {
+        flex: 1 1 auto; /* Allow items to grow and shrink */
+        padding: 10px; /* Adjust padding */
+        text-align: center; /* Center align the items */
+    }
+}
+
+/* .top-nav.second ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -71,7 +97,7 @@
 .top-nav.second a {
     text-decoration: none;
     color: #fff;
-}
+} */
 
 /* Hero Section */
 .hero {
