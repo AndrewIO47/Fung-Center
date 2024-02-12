@@ -82,23 +82,6 @@
     }
 }
 
-/* .top-nav.second ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.top-nav.second li {
-    margin: 0 20px;
-}
-
-.top-nav.second a {
-    text-decoration: none;
-    color: #fff;
-} */
-
 /* Hero Section */
 .hero {
     background-image: url('https://source.unsplash.com/white-and-red-labeled-pack-on-white-shelf-ivfp_yxZuYQ');
