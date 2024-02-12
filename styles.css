@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(96, 91, 91);
+    background-color: yellow;
     color: #fff;
     padding: 10px;
 }
@@ -51,9 +51,9 @@
 
 /* Top Navigation Bar - Second */
 .top-nav.second {
-    background-color: #2196F3;
+    background-color: blue;
     color: #fff;
-    padding: 10px 30px;
+    padding: 20px 120px;
 }
 
 .top-nav.second .nav-links {

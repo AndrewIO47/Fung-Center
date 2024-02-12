@@ -1,7 +1,7 @@
 /* product-styles.css */
 
 .category-section {
-    background-color: #c65656;
+    background-color: #e40a0a;
     padding: 10px;
     display: flex;
     justify-content: center; /* Center items horizontally */
@@ -15,7 +15,7 @@
 
 .category-item {
     padding: 10px 20px;
-    background-color: rgb(244, 244, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 30px;
     text-align: center; /* Align text in the center */
     margin: 0 !important; /* Remove margin */
