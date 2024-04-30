@@ -1,0 +1,298 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Navigation Bar - First */
+.top-nav.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    color: #fff;
+    padding: 10px;
+}
+
+.top-nav.first .logo img {
+    height: 75px;
+}
+
+.top-nav.first .search-bar input {
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    outline: none;
+    width: 300px;
+}
+
+.top-nav.first .cart-icon img {
+    height: 50px;
+}
+
+/* Navigation Links - First */
+.top-nav.first ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav.first li {
+    margin: 0 20px;
+}
+
+.top-nav.first a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Top Navigation Bar - Second */
+.top-nav.second {
+    background-color: blue;
+    color: #fff;
+    padding: 20px 120px;
+}
+
+.top-nav.second .nav-links {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+    justify-content: space-between; /* Add space between items */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
+.top-nav.second li {
+    margin: 0 10px; /* Add margin to create space between items */
+}
+
+.top-nav.second a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Adjust navigation item spacing for smaller screens */
+@media screen and (max-width: 768px) {
+    .top-nav.second li {
+        flex: 1 1 auto; /* Allow items to grow and shrink */
+        padding: 10px; /* Adjust padding */
+        text-align: center; /* Center align the items */
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://source.unsplash.com/white-and-red-labeled-pack-on-white-shelf-ivfp_yxZuYQ');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.category {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: rgb(244, 244, 244);
+    position: relative;
+}
+
+.category h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Product Section */
+.product-container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 0 20px; /* Add padding to create a gap between products and page edges */
+}
+
+.products {
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent products from wrapping */
+    padding-bottom: 10px; /* Add padding to create a gap between products and sliding buttons */
+}
+
+.products-wrapper {
+    display: flex;
+    position: relative; /* Add position relative to the wrapper */
+}
+
+.product {
+    width: calc(20% - 20px); /* Display 5 products */
+    margin-right: 20px;
+    margin-left: 10px; /* Add margin to the leftmost product */
+    border: 2px solid #000; /* Add black border */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.product:first-child {
+    margin-left: 0; /* Remove margin from the leftmost product */
+}
+
+.product:last-child {
+    margin-right: 0; /* Remove margin from the rightmost product */
+}
+
+.scroll-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1; /* Ensure buttons are above the products */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 0; /* Position the previous button to the left */
+}
+
+.next-btn {
+    right: 0; /* Position the next button to the right */
+}
+
+
+
+/* inside product information */
+.product-info {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity button {
+    background-color: lightcoral;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.quantity span {
+    padding: 0 10px;
+}
+
+.control-buttons {
+    display: none;
+}
+
+.control-buttons.active {
+    display: flex;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .category {
+        width: calc(50% - 20px); /* Two categories per row */
+    }
+
+    .product {
+        width: calc(33.33% - 20px); /* Three products per row */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .category,
+    .product {
+        width: calc(100% - 20px); /* One item per row */
+    }
+}
+
+/* FOOTER  */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo,
+.footer-contact,
+.footer-address,
+.footer-social {
+    flex-basis: calc(25% - 20px); /* Adjust column width with gap */
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer-column {
+        flex-basis: 100%; /* Make columns stack vertically on smaller screens */
+    }
+}
+
+
+
